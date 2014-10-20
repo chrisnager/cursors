@@ -1,0 +1,20 @@
+<!doctype html>
+    <head>
+        <title>Cursors</title>
+        <style>body{margin:0}div{padding:3em;font-family:sans-serif}</style>
+    </head>
+    <body>
+    <script>
+        var cursors = ['auto', 'default', 'none', 'context-menu', 'help', 'pointer', 'progress', 'wait', 'cell', 'crosshair', 'text', 'vertical-text', 'alias', 'copy', 'move', 'no-drop', 'not-allowed', 'all-scroll', 'col-resize', 'row-resize', 'n-resize', 's-resize', 'e-resize', 'w-resize', 'ns-resize', 'ew-resize', 'ne-resize', 'nw-resize', 'se-resize', 'sw-resize', 'nesw-resize', 'nwse-resize', 'url(//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/custom.cur), auto', 'zoom-in', 'zoom-out', 'grab', 'grabbing', '-webkit-grab', '-webkit-grabbing'];
+
+        for (var i = 0; i < cursors.length; i++) {
+            var block = document.createElement('div');
+            var hsl =  'hsl(' + ~~(Math.random() * 360) + ', 50%, 75%)';
+
+            block.innerHTML = block.style.cursor = cursors[i];
+            block.style.backgroundColor = hsl;
+
+            document.body.appendChild(block);
+        }
+    </script>
+</body>

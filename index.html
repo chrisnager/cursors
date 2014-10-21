@@ -1,22 +1,20 @@
 <!doctype html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width">
         <title>Cursors</title>
-        <style>body{margin:0}div{padding:3em;font-family:sans-serif}</style>
+        <meta name="description" content="All available cursors">
+        <style>body{margin:0;font:1.5em "Helvetica Neue",sans-serif}header,div,footer{padding:2em;word-wrap:break-word}a{text-decoration:none;color:#0af}</style>
     </head>
     <body>
-        <script>
-            var cursors = ['auto', 'default', 'none', 'context-menu', 'help', 'pointer', 'progress', 'wait', 'cell', 'crosshair', 'text', 'vertical-text', 'alias', 'copy', 'move', 'no-drop', 'not-allowed', 'all-scroll', 'col-resize', 'row-resize', 'n-resize', 's-resize', 'e-resize', 'w-resize', 'ns-resize', 'ew-resize', 'ne-resize', 'nw-resize', 'se-resize', 'sw-resize', 'nesw-resize', 'nwse-resize', 'url(//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/custom.cur), auto', 'zoom-in', 'zoom-out', 'grab', 'grabbing', '-webkit-grab', '-webkit-grabbing'];
-
-            for (var i = 0; i < cursors.length; i++) {
-                var block = document.createElement('div');
-                var hsl =  'hsl(' + ~~(Math.random() * 360) + ', 50%, 75%)';
-
-                block.innerHTML = block.style.cursor = cursors[i];
-                block.style.backgroundColor = hsl;
-
-                document.body.appendChild(block);
-            }
-        </script>
+        <header>
+            <h1><a href="//github.com/chrisnager/cursors">Cursors</a></h1>
+            <p>All available cursors</p>
+        </header>
+        <main></main>
+        <footer>
+            <small><a href="//github.com/chrisnager/cursors">github</a> &middot; <a href="//codepen.io/chrisnager/pen/fqkml">codepen</a> &middot; <a href="//twitter.com/chrisnager">@chrisnager</a></small>
+        </footer>
+        <script>var i,c=['auto','default','none','context-menu','help','pointer','progress','wait','cell','crosshair','text','vertical-text','alias','copy','move','no-drop','not-allowed','all-scroll','col-resize','row-resize','n-resize','s-resize','e-resize','w-resize','ns-resize','ew-resize','ne-resize','nw-resize','se-resize','sw-resize','nesw-resize','nwse-resize','url(//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/custom.cur), auto','zoom-in','zoom-out','grab','grabbing','-webkit-grab','-webkit-grabbing'];for(i=0;i<c.length;i++){var d=document.createElement('div'),h='hsl('+~~(Math.random()*360)+',50%,75%)';d.innerHTML=d.style.cursor=c[i];d.style.backgroundColor=h;document.getElementsByTagName('main')[0].appendChild(d);}</script>
     </body>
 </html>
